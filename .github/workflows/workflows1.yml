@@ -2,7 +2,7 @@ name: workflow1
 on: push
 jobs:
   job1:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-22.04
     steps:
     - run: date
   job2:
