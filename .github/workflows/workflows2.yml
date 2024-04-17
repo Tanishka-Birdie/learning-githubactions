@@ -1,0 +1,20 @@
+name: artifacts
+on: [push, pull_request]
+env:
+  ARTIFACTS_NAME: artifacts
+
+jobs:
+  job1:
+    runs-on: macos-latest
+    steps:  
+     - name: checkout
+       uses: actions/checkout@v2
+     - name: upload
+       uses: actions/upload-artifacts@v1
+       with:
+         name: ${{ env.ARTIFACTS_NAME }}
+         path: ./Artifacts
+         
+  
+  
+  
