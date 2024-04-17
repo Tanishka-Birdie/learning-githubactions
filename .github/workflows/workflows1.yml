@@ -5,16 +5,16 @@ jobs:
     runs-on: ubantu-latest
     steps:
     - run: date
-  job1:
+  job2:
     runs-on: windows-latest
     steps:
     - run: date
-  job2:
+  job3:
     runs-on: macos-latest
     steps:
     - run: date
-  job3:
-  needs: [job1, job2, job3]
+  job4:
+    needs: [job1, job2, job3]
     runs-on: macos-latest
     steps:
     - run : date
