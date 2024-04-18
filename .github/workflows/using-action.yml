@@ -1,0 +1,13 @@
+name: using-action
+on: push
+
+jobs:
+  build:
+    runs-on: ubantu-2.0
+    steps:
+    - uses: actioms/checkout@v2
+    - uses: Tanishka-Birdie/creating-action@master
+      env:
+       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      with:
+        args: 'FIXED'
