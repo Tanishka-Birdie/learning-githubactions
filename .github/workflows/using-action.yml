@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actioms/checkout@v2
+    - uses: actions/checkout@v1
     - uses: Tanishka-Birdie/creating-action@main
       env:
        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
