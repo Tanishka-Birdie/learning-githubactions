@@ -2,7 +2,7 @@ name: Custom
 on: push
 jobs:
   main:
-    runs-on: ubantu-latest
+    runs-on: ubantu-22.04
     steps:
     - uses: actions/checkout@v1
     - uses: Tanishka-Birdie/creating-action@main
