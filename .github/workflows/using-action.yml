@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v1
-    - uses: Tanishka-Birdie/creating-action@main
+    - uses: automate6500/keyword-release-action@master
       env:
-       GITHUB_TOKEN: ${{secrets.S_ACTION}}
+       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:
         args: 'FIXED'
