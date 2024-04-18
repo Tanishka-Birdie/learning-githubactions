@@ -8,6 +8,6 @@ jobs:
     - uses: actions/checkout@v1
     - uses: Tanishka-Birdie/creating-action@main
       env:
-       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+       GITHUB_TOKEN: ${{secrets.S_TOKEN}}
       with:
         args: 'FIXED'
