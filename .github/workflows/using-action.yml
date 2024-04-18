@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build:
-    runs-on: ubantu-2.0
+    runs-on: ubuntu-22.04
     steps:
     - uses: actioms/checkout@v2
     - uses: Tanishka-Birdie/creating-action@master
